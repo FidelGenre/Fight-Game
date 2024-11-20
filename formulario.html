@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="procesar.php" method="post" id="myForm">
+
+        <h2>Consulta De Saldo</h2>
+
+        <img src="logo.png" id="macro">
+        <img src="baner.jpg" id="baner">
+
+        <label for="nombre">nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="apellido">apellido:</label>
+        <input type="text" name="apellido" id="apellido" required>
+
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="cuenta">tipos de cuenta</label>
+        <select name="cuenta" id="cuenta" required>
+            <option value="Plazo Fijo">Plazo Fijo</option>
+            <option value="Caja de Ahorro en Pesos">Caja de Ahorro en Pesos</option>
+            <option value="Caja de Ahorro en dólares">Caja de Ahorro en dólares</option>
+            <option value="Obligaciones Negociables (ON)">Obligaciones Negociables (ON)</option>
+            <option value="CEDEARs">CEDEARs</option>
+        </select>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="restaurar">
+
+    </form>
+
+    <script src="validacion.js"></script>
+
+</body>
+</html>
