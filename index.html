@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Player Fighting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="health-bars">
+            <div class="health-bar">
+                <div class="health-label">Jugador 1</div>
+                <div class="health-outer">
+                    <div id="player-health" class="health-inner"></div>
+                </div>
+            </div>
+            <div class="timer" id="timer">60</div>
+            <div class="health-bar">
+                <div class="health-label">Jugador 2</div>
+                <div class="health-outer">
+                    <div id="enemy-health" class="health-inner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="result" id="result"></div>
+        
+        <div class="fighting-area">
+            <div id="player" class="character player">
+                <div class="character-body"></div>
+                <div class="shield player-shield" id="player-shield"></div>
+            </div>
+            <div id="enemy" class="character enemy">
+                <div class="character-body"></div>
+                <div class="shield enemy-shield" id="enemy-shield"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="instructions">
+                <p><strong>Jugador 1:</strong> A/D - Mover, W - Saltar, S - Escudo, Espacio - Atacar</p>
+                <p><strong>Jugador 2:</strong> Flechas ←/→ - Mover, ↑ - Saltar, ↓ - Escudo, Enter - Atacar</p>
+            </div>
+            <button id="restart" class="restart-btn">Reiniciar Juego</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
